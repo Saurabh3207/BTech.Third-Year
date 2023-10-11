@@ -21,7 +21,7 @@ Install the required packages using the following command:
 pip install -r requirements.txt
 
 Step 4: Configure Gmail for IMAP
-1)og in to your Gmail account.
+1)Log in to your Gmail account.
 
 2)Click on the gear icon in the upper-right corner and select "See all settings."
 
