@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="main-title">LAB 03 Q.2</h1>
+    <p id="demo">This is a paragraph.</p>
+    
+    <button id="changeTextButton">Change Text</button>
+    <button id="addTextNode">Add Text Node</button>
+    <button id="deleteNode">Delete Node</button>
+    <button id="changeBgColor">Change Background Color</button>
+    <form id="exampleForm">
+        <input type="text" id="inputField" name="inputField" placeholder="Type something...">
+        <button type="submit" id="submitButton">Submit</button>
+    </form>
+    <script>
+       
+
+        $("#changeTextButton").click(function() {
+            $("#demo").text("Text changed successfully!");
+        });
+
+        $("#addTextNode").click(function() {
+            const newNode = $("<p>New Text Node Added successfully !</p>");
+            $("body").append(newNode);
+        });
+
+        $("#deleteNode").click(function() {
+            const nodesToDelete = $("p");
+            if (nodesToDelete.length > 0) {
+                nodesToDelete.last().remove();
+            }
+        });
+
+        $("#exampleForm").submit(function(event) {
+            event.preventDefault();
+            const inputValue = $("#inputField").val();
+            alert("Submitted: " + inputValue);
+        });
+
+        $("#changeBgColor").click(function() {
+            document.body.classList.toggle("changed-bg");
+        });
+        $("#exampleForm").submit(function(event) {
+            event.preventDefault();
+            const inputValue = $("#inputField").val();
+            
+            if (inputValue.trim() === "") {
+                alert("Input field should not be empty.");
+                return;
+            }
+
+            alert("Submitted: " + inputValue);
+        });
+    </script>
+    <footer>
+        <p>PA12_Saurabh Jadhav_Batch:-A1_CSF_PANEL01</p>
+    </footer>
+</body>
+</html>
