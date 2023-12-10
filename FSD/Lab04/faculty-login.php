@@ -3,7 +3,7 @@ session_start(); // Start the session
 
 $servername = "localhost";
 $username = "root";
-$password = "@Saurabh9833@";
+$password = "your_password if not set then keep it blank";
 $database = "registerform";
 
 // Create connection

@@ -1,8 +1,15 @@
+
 <?php
+// Name: Saurabh Jadhav
+//Roll No: PA12
+//Class: TY BTECH CSF
+//Program Name: Student Registration Form using PHP and MySQL
+
+// Database credentials - change these to your database connection details
 $servername = "localhost";
 $username = "root";
-$password = "@Saurabh9833@";
-$database = "registerform"; 
+$password = "your_password if not set then keep it blank";
+$database = "your_database_name"; 
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);

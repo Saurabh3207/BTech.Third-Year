@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["id"])) {
     // Create a database connection (similar to your other pages)
     $servername = "localhost";
     $username = "root";
-    $password = "@Saurabh9833@";
+    $password = "your MYSQL password here if not set then keep it blank";
     $dbname = "registerform";
 
     $conn = new mysqli($servername, $username, $password, $dbname);

@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "@Saurabh9833@";
+$password = "your MYSQL password here if not set then keep it blank";
 $dbname = "registerform";
 
 // Create a connection
